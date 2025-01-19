@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nav section Here */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    color: #0f98dc;
+    background-color: #0afee2;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    background-color: #c8e6c6;
+    color: #000;
+    font-size: 13px;
+    gap: 10px;
+
+}
+
+a:hover{
+    color: #000000;
+    background-color: rgb(8, 252, 0);
+}
+
+/* banner section here */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .banner {
+    position: relative;
+    border: 3px dashed #848080;
+    width: 100%;
+    height: 100vh;
+    background: url('assignment-one/assets/hero-bg.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .banner::before {
+    content: "";
+    position: absolute;
+    border: 1px dashed #848080;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180.00deg, #090909 2.884%, #10101000 101.034%);
+    transform: rotate(-180deg);
+  }
+
+  .banner-content {
+    position: relative;
+  }
+
+  .banner h1 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .banner h2 {
+    font-size: 64px;
+    font-weight: 700;
+  }
+
+  .banner p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .all-button {
+    margin: 32px 0px;
+    padding: 21px 32px 21px 32px;
+    font-size: 18px;
+    color: white;
+    background-color: #52C303;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+  }
+
+  .all-button:hover {
+    background-color: #218838;
+  }
+
+  /* card section here */
+
+  .top-title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px dashed #848080;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .deals-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .deal-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+  }
+
+  .deal-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .deal-card h3 {
+    margin: 15px 0;
+    font-size: 24px;
+    color: rgb(16, 16, 16);;
+  }
+
+  .deal-card .discount {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .deal-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 20px;
+  }
+
+  /* about section here */
+  .about-container {
+    display: flex;
+    width: 100%;
+    height: 671px;
+}
+
+.image-section {
+    width: 50%;
+    background: url('assignment-one/assets/foods.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border: #848080 dashed 3px;
+}
+
+.content-section {
+    width: 50%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.content-section h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* sosial icon section here */
+.content-section .social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0073e6;
+  transform: scale(1.1);
+}
+
+.social-icons i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      height: auto;
+  }
+
+  .image-section, .content-section {
+      width: 100%;
+      height: 50vh;
+  }
+
+  .content-section {
+      height: auto;
+      padding: 20px;
+  }
+}
+
+/* footer section here */
+.paragraph{
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 20px;
+}
+.bg-img{
+    height: 671px;
+    width: 1932px;
+    background: url('assignment-one/assets/social-bg.png') ;
+    border: #848080 dashed 3px;
+    bottom: 159px;
+    right: 84px;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0.5;
+    text-shadow: #000;
+}
+
+
+
+
+
+
+
+
